@@ -19,6 +19,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name=".TeamProvider"
+            android:authorities="com.vscode.teams.teamprovider"
+            android:exported="false" />
+
+        <activity android:name=".InsertTeam">
+
+        </activity>
     </application>
 
 </manifest>
