@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".InsertTeam">
+
+    <TextView
+        android:id="@+id/tvTeamName"
+        android:text="@string/team_name"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etTeamName"
+        android:gravity="center"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:hint="@string/insert_team_name_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTeamName"/>
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_marginTop="15dp"
+        android:text="@string/insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/etTeamName"
+        />
+
+
+</RelativeLayout>
